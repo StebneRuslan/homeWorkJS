@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>third homework</title>
+    <script src="arrayMethods.js"></script>
+    <script src="recursionMethods.js"></script>
+    <script src="methodSum.js"></script>
+    <script src="additionalTask.js"></script>
+</head>
+<body>
+<script>
+    let arr = ['a', 'b', 'c', 4, 5, 6];
+    console.log('method push');
+    console.log(arrayMethods.push.call(arr, 'contextual method'));
+    Array.prototype.push = arrayMethods.push;
+    console.log(arr.push('proto method'));
+    console.log(arr);
+
+    console.log('method pop');
+    console.log(arrayMethods.pop.call(arr));
+    Array.prototype.pop = arrayMethods.pop;
+    console.log(arr.pop());
+    console.log(arr);
+
+    console.log('method slice');
+    console.log(arrayMethods.slice.call(arr, -4, 5));
+    Array.prototype.slice = arrayMethods.slice;
+    console.log(arr.slice(-4 , 5));
+    console.log(arr);
+
+    console.log('method join');
+    console.log(arr.join('=>'));
+    console.log(arrayMethods.join.call(arr, '=>'));
+    Array.prototype.join = arrayMethods.join;
+    console.log(arr);
+
+    console.log('method reverse');
+    Array.prototype.reverse = arrayMethods.reverse;
+    console.log(arr.reverse());
+    console.log(arr);
+    console.log(arrayMethods.reverse.call(arr));
+    console.log(arr);
+
+    console.log('prototype method sum');
+    let a = 5;
+    let b = a.sum(5);
+    console.log(b);
+    console.log(a);
+    console.log(a.sum(b) === a + b);
+
+    console.log('FACTORIAL METHOD');
+    console.time('factorial recursion method');
+    for (let i = 0; i < 1000000; i++) {
+        getFactorialRecursion(20)
+    }
+    console.timeEnd('factorial recursion method');
+
+    console.time('factorial method');
+    for (let i = 0; i < 1000000; i++) {
+        getFactorial(20)
+    }
+    console.timeEnd('factorial method');
+
+    console.time('pow recursion method');
+    for (let i = 0; i < 1000000; i++) {
+        powRecursively(2, -5);
+    }
+    console.timeEnd('pow recursion method');
+
+    console.time('pow method');
+    for (let i = 0; i < 1000000; i++) {
+        pow(2, -5);
+    }
+    console.timeEnd('pow method');
+
+    console.time('numbersSum recursion method');
+    for (let i = 0; i < 1000000; i++) {
+        numbersSumRecursively(3742);
+    }
+    console.timeEnd('numbersSum recursion method');
+
+    console.time('numbersSum method');
+    for (let i = 0; i < 1000000; i++) {
+        numbersSum(3742);
+    }
+    console.timeEnd('numbersSum method');
+    console.log(waterAmount([2, 1, 5, 0, 3, 4, 7, 7, 7, 2, 3, 1, 0]));
+    console.log(waterAmount([7, 2, 4, 8, 4, 3])); // 5+3 = 8
+    console.log(waterAmount([2, 1, 5, 0, 3, 4, 7, 2, 3, 1, 0])); //1+5+2+1+1 = 10
+    console.log(waterAmount([5, 4, 3, 2, 0, 3, 6, 8]));// 1+2+3+5+2 = 13
+    console.log(waterAmount([1]));// 0
+</script>
+</body>
+</html>
