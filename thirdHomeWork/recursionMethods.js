@@ -7,11 +7,15 @@ function getFactorialRecursion(number) {
 }
 
 function getFactorial(number) {
-    let res = 1;
-    for (let i = 1; i <= number; i++) {
-        res *= i;
+    if (number > 1 && !isNaN(number)) {
+        let res = 1;
+        for (let i = 1; i <= number; i++) {
+            res *= i;
+        }
+        return res;
+    } else {
+        console.log('Invalid data')
     }
-    return res;
 }
 
 function powRecursively(number, pow) {
@@ -46,18 +50,26 @@ function pow(number, pow) {
 }
 
 function numbersSumRecursively(number) {
-    let sum = number % 10;
-    if (number >= 10) {
-        sum += numbersSumRecursively(Math.floor(number / 10));
+    if (number > 0) {
+        let sum = number % 10;
+        if (number >= 10) {
+            sum += numbersSumRecursively(Math.floor(number / 10));
+        }
+        return sum;
+    } else {
+        console.log('Invalid data')
     }
-    return sum;
 }
 
 function numbersSum(number) {
-    let res = 0;
-    while (number) {
-        res += number % 10;
-        number = Math.floor(number / 10)
+    if (number > 0){
+        let res = 0;
+        while (number) {
+            res += number % 10;
+            number = Math.floor(number / 10)
+        }
+        return res;
+    } else {
+        console.log('Invalid data')
     }
-    return res;
 }

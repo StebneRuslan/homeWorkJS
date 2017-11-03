@@ -52,13 +52,13 @@
     console.log('FACTORIAL METHOD');
     console.time('factorial recursion method');
     for (let i = 0; i < 1000000; i++) {
-        getFactorialRecursion(20)
+        getFactorialRecursion(20);
     }
     console.timeEnd('factorial recursion method');
 
     console.time('factorial method');
     for (let i = 0; i < 1000000; i++) {
-        getFactorial(20)
+        getFactorial(20);
     }
     console.timeEnd('factorial method');
 
@@ -76,13 +76,13 @@
 
     console.time('numbersSum recursion method');
     for (let i = 0; i < 1000000; i++) {
-        numbersSumRecursively(3742);
+        numbersSumRecursively(-5455);
     }
     console.timeEnd('numbersSum recursion method');
 
     console.time('numbersSum method');
     for (let i = 0; i < 1000000; i++) {
-        numbersSum(3742);
+        numbersSum(-54121);
     }
     console.timeEnd('numbersSum method');
     console.log(waterAmount([2, 1, 5, 0, 3, 4, 7, 7, 7, 2, 3, 1, 0]));
