@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .actionNone {
+            display: none;
+        }
+        .health {
+            background: red;
+        }
+        .strength {
+            background-color: greenyellow;
+        }
+        .power {
+            background-color: aqua;
+        }
+        .happiness {
+            background-color: gold;
+        }
+        .hygiene {
+            background-color: lightgrey;
+        }
+    </style>
+    <script src="tamagotchi.js"></script>
+</head>
+<body>
+<div>
+    <h1 class="eat actionNone">Я хочу їсти</h1>
+    <h1 class="play actionNone">Мені сумно</h1>
+    <h1 class="energy actionNone">Я хочу спати</h1>
+    <h1 class="name"></h1>
+    <h2 class="health"></h2>
+    <h3 class="strength"></h3>
+    <h3 class="power"></h3>
+    <h3 class="happiness"></h3>
+    <h3 class="hygiene"></h3>
+    <input type="button" onclick="tom.eat()" value="Їсти">
+    <input type="button" onclick="tom.play()" value="Грати">
+    <input type="button" onclick="tom.sleep()" value="Спати">
+    <input type="button" onclick="tom.treated()" value="Лікувати">
+    <input type="button" onclick="tom.swim()" value="Купатися">
+</div>
+
+</body>
+</html>
