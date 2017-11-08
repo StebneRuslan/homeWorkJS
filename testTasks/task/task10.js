@@ -44,42 +44,6 @@ var capsLockTests = [
 
 
 function capsLock(str) {
-    let res = "";
-    let words = str.split(" ");
-    for (let i = 0; i < words.length; i++) {
-        let bigLetter;
-        let word = words[i];
-        if (word[0] >= "a" && word[0] <= "z") {
-            bigLetter = true;
-            for (let j = 1; j < word.length; j++) {
-                if (word[j] >= "a" && word[j] <= "z") {
-                    bigLetter = false;
-                    break;
-                }
-            }
-            if (bigLetter) {
-                let s = word.substring(1);
-                word = word[0].toUpperCase() + s.toLowerCase();
-            }
-        } else {
-            bigLetter = true;
-            for (let j = 1; j < word.length; j++) {
-                if (word[j] >= "a" && word[j] <= "z") {
-                    bigLetter = false;
-                    break;
-                }
-            }
-            if (bigLetter) {
-                word = word.toLowerCase();
-            }
-        }
-        if (res === "") {
-            res = word;
-        } else {
-            res += " " + word;
-        }
-    }
-    return res;
 }
 
 
