@@ -1,0 +1,58 @@
+body {
+    background-color: lightgray;
+}
+
+input[type = text], .input {
+    border: 1px solid #e1e1e1;
+    background-color: #eeeeee;
+    display: block;
+    width: 92%;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    outline: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+del.cross {
+    display:inline-block; /* запрещает перенос текста на следующую строку */
+    text-decoration:none;
+    position:relative;
+}
+
+.toDo {
+    border: 1px solid rgb(212,75,56);
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.edit {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.inputDiv {
+    width: 400px;
+    position: relative;
+    top: 40%;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+button, input[type = button]{
+    color: #fff;
+    border: 1px solid rgb(212,75,56);
+    background: rgb(212,75,56);
+    margin-bottom: 15px;
+    margin-top: 15px;
+    float: right;
+}
+
+button:hover, input[type = button]:hover { background: rgb(232,95,76); }
