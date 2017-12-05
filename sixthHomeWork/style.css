@@ -1,0 +1,47 @@
+div {
+    margin-top: 20px;
+    width: 410px;
+    border: solid 1px transparent;
+}
+
+div > div {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    text-align: center;
+    font: 20px/90px Tahoma,sans;
+    background-color: #e1e1e1;
+}
+
+div > div:hover {
+    background-color: red;
+    animation-name: setColor;
+    animation-duration: 2s;
+}
+
+@keyframes setColor {
+    from {background-color: #cc1001;}
+    to {background-color: yellow;}
+}
+
+button {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 130px;
+}
+
+button:hover {
+    background-color: grey;
+    color: black;
+}
+
+.board {
+    background-color: darkslategrey;
+}
