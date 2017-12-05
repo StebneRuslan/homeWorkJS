@@ -9,7 +9,7 @@ let fifteen = {
 
     isCompleted: function() {
         return !this.board.some(function(item, i) {
-            return item > 0 && item-1 !== i;
+            return item > 0 && item - 1 !== i;
         });
     },
 
