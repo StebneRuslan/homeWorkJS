@@ -5,7 +5,27 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <button id="newGame">New Game</button>
+<article class="container">
+    <div id="menu" class="menu inside">
+        <button id="newGame">New Game</button>
+        <input type="text" id="size" placeholder="Board size '2-10'"/>
+        <input type="text" id="user" placeholder="Name"/>
+    </div>
+    <div id="time" class="inside"></div>
+    <div class="inside">
+        <h1 class="leaderboard">Champions</h1>
+        <table id="tableHead">
+            <tr >
+                <th>Name</th>
+                <th>Time</th>
+                <th>Size</th>
+            </tr>
+        </table>
+    </div>
+</article>
+
+
+    <div id="gameBox"></div>
     <script src="index.js"></script>
 </body>
 </html>
