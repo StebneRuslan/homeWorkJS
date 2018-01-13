@@ -1,3 +1,5 @@
+import tasks from '../model/task';
+
 function TaskModel(tasks) {
     let allTasks = JSON.parse(localStorage.getItem('allTasks'));
 
@@ -93,5 +95,7 @@ TaskModel.prototype.trigger = function (event, args) {
     }
 });
 };
+
+export default TaskModel;
 
 
