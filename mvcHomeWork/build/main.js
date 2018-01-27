@@ -105,8 +105,7 @@ let tasks = new __WEBPACK_IMPORTED_MODULE_0__taskModel__["a" /* default */]([
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__controller_task__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_bilmakovchik_homeWorkJS_mvcHomeWork_public_css_task_css__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_bilmakovchik_homeWorkJS_mvcHomeWork_public_css_task_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__home_bilmakovchik_homeWorkJS_mvcHomeWork_public_css_task_css__);
+throw new Error("Cannot find module \"mvcHomeWork/public/css/task.css\"");
 
 
 
@@ -391,12 +390,6 @@ TaskModel.prototype.trigger = function (event, args) {
 
 
 
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
